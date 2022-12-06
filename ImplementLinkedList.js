@@ -36,13 +36,7 @@ class LinkedList {
   }
 }
 
-const node1 = new ListNode(5);
-const node2 = new ListNode(10);
-const node3 = new ListNode(15);
-node1.next = node2;
-node2.next = node3;
-
-const list = new LinkedList(node1);
-
-console.log("size", list.size());
-console.log("LastElement", list.getLast());
+module.exports = {
+  ListNode,
+  LinkedList,
+};
