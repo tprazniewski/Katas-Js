@@ -26,12 +26,9 @@ function climbingStaisRecu(num) {
 }
 
 const climbingStaisMemo = (n, memo = {}) => {
-  console.log(memo);
   if (n in memo) return memo[n];
   if (n <= 2) return 1;
 
   memo[n] = climbingStaisMemo(n - 1, memo) + climbingStaisMemo(n - 2, memo);
   return memo[n];
 };
-
-console.log(climbingStaisMemo(8));
