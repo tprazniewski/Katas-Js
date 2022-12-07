@@ -13,5 +13,14 @@ const twoSum = function (nums, target) {
   }
 };
 
-const arr = [1, 4, 6, 7, 9];
-const target = 16;
+const twoSumIndicates = function (nums, target) {
+  let arr = 1;
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = 0 + arr; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
+    }
+    arr++;
+  }
+};
