@@ -5,11 +5,11 @@ function selectionSort(arr) {
       if (arr[lowest] > arr[j]) {
         lowest = j;
       }
-      if (i !== lowest) {
-        let temp = arr[i];
-        arr[i] = arr[lowest];
-        arr[lowest] = temp;
-      }
+    }
+    if (i !== lowest) {
+      let temp = arr[i];
+      arr[i] = arr[lowest];
+      arr[lowest] = temp;
     }
   }
   return arr;
