@@ -1,16 +1,16 @@
 function bubleSort(arr) {
-  // let noSwaps;
+  let noSwaps;
   for (let i = 0; i < arr.length - 1; i++) {
-    // noSwaps = true;
+    noSwaps = true;
     for (let j = 0; j < arr.length - 1 - i; j++) {
       if (arr[j] >= arr[j + 1]) {
-        // noSwaps = false;
+        noSwaps = false;
         let temp = arr[j];
         arr[j] = arr[j + 1];
         arr[j + 1] = temp;
       }
     }
-    // if (noSwaps) break;
+    if (noSwaps) break;
   }
   return arr;
 }
